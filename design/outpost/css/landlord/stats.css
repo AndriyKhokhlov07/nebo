@@ -1,0 +1,615 @@
+
+
+@font-face {
+    font-family: 'icons';
+    src:  url('../../fonts/icons/icons.eot?v3');
+    src:  url('../../fonts/icons/icons.eot?v3') format('embedded-opentype'),
+          url('../../fonts/icons/icons.ttf?v3') format('truetype'),
+          url('../../fonts/icons/icons.woff?v3') format('woff'),
+          url('../../fonts/icons/icons.svg?v3') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="i-"], [class*=" i-"] {
+    font-family: 'icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.i-user:before {
+    content: "\e909";
+}
+.i-search:before {
+    content: "\e908";
+}
+.i-beds:before {
+    content: "\e904";
+}
+.i-apartments:before {
+    content: "\e900";
+}
+.i-copy:before {
+    content: "\e901";
+}
+.i-D_tour:before {
+    content: "\e902";
+}
+.i-bath_room:before {
+    content: "\e903";
+}
+.i-calendar:before {
+    content: "\e905";
+}
+.i-room:before {
+    content: "\e906";
+}
+.i-tenants:before {
+    content: "\e907";
+}
+
+
+.view_landlord,
+.view_landlord strong,
+.view_landlord [data-tooltip]::before{
+    font-family: "Helvetica Neue", Tahoma, Arial, Helvetica;
+}
+
+
+.house_statistics {
+    margin: 30px 0;
+}
+
+.icon_block{
+    background: #fff;
+    margin: 0 20px 20px 0;
+}
+.icon_block:last-child{
+    margin-right: 0;
+}
+.icon_bx{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    padding: 30px 30px 25px;
+}
+.icon_bx i {
+    color: #4A4E66;
+    font-size: 30px;
+}
+.house_statistics .icons_block.md .icon_bx .cont{
+    margin-left: 20px;
+}
+.house_statistics .icons_block.md .icon_bx .cont .title{
+    color: #333;
+    font-size: 13px;
+}
+.house_statistics .icons_block.md .icon_bx .cont > span{
+    color: #4A4E66;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.house_statistics .icons_block.md .apartment_types{
+    border-left: #ddd 1px solid;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.house_statistics .icons_block.md table{
+    color: #999;
+    font-size: 13px;
+    white-space: nowrap;
+}
+.house_statistics .icons_block.md .count{
+    color: #4A4E66;
+    text-align: right;
+    padding-left: 5px;
+}
+.house_statistics .icons_block.md tr:not(:last-child) td {
+    padding-bottom: 3px;
+}
+.house_statistics .icons_block.md .occupancy_icon {
+    background: rgba(0,0,0,.08);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    position: relative;
+    top: -2px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+.house_block{
+    width: 100%;
+    margin: 50px 0;
+}
+.house_bx{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+}
+.title_style{
+    font-family: "Helvetica", sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 600;
+    color: #3b527c;
+    margin: 0 0 10px;
+}
+.house_cont_block{
+    background: #fff;
+    padding: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    height: calc(100% - 27px);
+}
+.house_cont_block.occupancy_house{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.house_cont_block.occupancy_house .occupancy_days_graph{
+    margin: 25px 0 65px;
+}
+.occupancy_days_graph.occupancy_months_graph .item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.occupancy_days_graph.occupancy_months_graph.sb .item{
+    margin-left: 0;
+    margin-right: 0;
+}
+.occupancy_months_graph .item > .wrapper {
+    width: 24px;
+}
+
+.occupancy_days_graph.anim .item .val{
+    max-height: 0;
+    animation-duration: .5s;
+    animation-name: gr;
+    animation-fill-mode: forwards;
+
+}
+.occupancy_days_graph.anim .item:nth-child(2) .val{
+    animation-delay: .1s;
+}
+.occupancy_days_graph.anim .item:nth-child(3) .val{
+    animation-delay: .2s;
+}
+.occupancy_days_graph.anim .item:nth-child(4) .val{
+    animation-delay: .3s;
+}
+.occupancy_days_graph.anim .item:nth-child(5) .val{
+    animation-delay: .4s;
+}
+.occupancy_days_graph.anim .item:nth-child(6) .val{
+    animation-delay: .5s;
+}
+.occupancy_days_graph.anim .item:nth-child(7) .val{
+    animation-delay:.6s;
+}
+.occupancy_days_graph.anim .item:nth-child(8) .val{
+    animation-delay: .7s;
+}
+.occupancy_days_graph.anim .item:nth-child(9) .val{
+    animation-delay: .8s;
+}
+.occupancy_days_graph.anim .item:nth-child(10) .val{
+    animation-delay: .9s;
+}
+.occupancy_days_graph.anim .item:nth-child(11) .val{
+    animation-delay: 1s;
+}
+.occupancy_days_graph.anim .item:nth-child(12) .val{
+    animation-delay: 1.1s;
+}
+.occupancy_days_graph.anim .item:nth-child(13) .val{
+    animation-delay: 1.2s;
+}
+.occupancy_days_graph.anim .item:nth-child(14) .val{
+    animation-delay: 1.3s;
+}
+.occupancy_days_graph.anim .item:nth-child(15) .val{
+    animation-delay: 1.4s;
+}
+.occupancy_days_graph.anim .item:nth-child(16) .val{
+    animation-delay: 1.5s;
+}
+.occupancy_days_graph.anim .item:nth-child(17) .val{
+    animation-delay: 1.6s;
+}
+.occupancy_days_graph.anim .item:nth-child(18) .val{
+    animation-delay: 1.7s;
+}
+.occupancy_days_graph.anim .item:nth-child(19) .val{
+    animation-delay: 1.8s;
+}
+
+@keyframes gr{
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 100%;
+    }
+}
+
+.occupancy_days_graph .item .top_val {
+    border-radius: 11px;
+    color: #9b9797;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, -7px);
+    padding: 5px 7px;
+}
+.occupancy_days_graph .item .top_val:before{
+    content: '';
+    display: none;
+    border: transparent 6px solid;
+    border-top-color: transparent;
+    border-top-color: transparent;
+    border-top-color: #000;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.occupancy_days_graph .item:hover .top_val{
+    background: #000;
+    color: #fff;
+}
+
+.occupancy_days_graph .item:hover .top_val:before{
+    display: block;
+}
+.occupancy_months_graph .item .day {
+    color: #b3afaf;
+    line-height: 1.2;
+}
+.occupancy_months_graph:not(:hover) .item.selected .day,
+.occupancy_months_graph .item:hover .day {
+    background: none;
+    border-radius: unset;
+    color: #000;
+    line-height: 1.2;
+    width: auto;
+    height: auto;
+    top: calc(100% + 10px);
+}
+.occupancy_days_graph .item.future .val,
+.occupancy_days_graph .item.now .val {
+    background-image: url(../../images/icons/line_bg.svg);
+    background-size: 6px 6px;
+}
+
+
+.journal_content .list_1{
+    font-size: 13px;
+    width: 100%;
+}
+.journal_content .list_1 > .item{
+    background: #f2f2f2;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 8px 0;
+}
+.journal_content .list_1 > .item.bg2{
+    background: #e9e9e9;
+}
+.journal_content .list_1 > .item.bg3{
+    background: #e8e8ee;
+}
+.journal_content .list_1 > .item .n{
+    display: inline-block;
+    color: #7f95bb;
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    width: 22px;
+    font-weight: 600;
+}
+.list_1.s_counter {
+    counter-reset: point;
+}
+.list_1.s_counter > .item .n::before,
+.list_1.s_counter > .lease_item .n::before{
+    content: counter(point);
+    counter-increment: point 1;
+}
+
+.journal_content .list_1 > .item .value1{
+    display: inline-block;
+    margin-right: 7px;
+}
+.journal_content .list_1 > .item .invoice_number{
+    color: #888;
+    min-width: 40px;
+    margin-right: 10px;
+}
+.journal_content .list_1 > .item .sm{
+    color: #999;
+    font-size: 10px;
+}
+.journal_content .list_1 > .item .badges {
+    display: inline-block;
+    min-width: 150px;
+}
+.journal_content .list_1 > .item .badges .badge {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 60px;
+    margin: 1px 0 -3px 5px;
+}
+.journal_content .list_1 > .item .badge.ct_1{
+    background: #007bff;
+}
+.journal_content .list_1 > .item .badge.ct_2{
+    background: #ff385c;
+}
+.journal_content .list_1 > .item .badge.ct_3{
+    background: #008489;
+}
+.journal_content .list_1 > .item .badge.ct_4{
+    background: #ed502d;
+}
+.journal_content .list_1 > .item .badge.ct_5{
+    background: #80d0d5;
+}
+
+
+.lease_item{
+    background: #e8e8ee;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 10px 20px 8px;
+    margin: 8px 0;
+}
+.lease_item.has_tenants {
+    padding: 15px 20px;
+}
+.lease_item .lease_info {
+    align-items: center;
+}
+.lease_item.has_tenants .lease_info {
+    padding: 0 10px;
+}
+.lease_item .lease_number {
+    color: #888;
+}
+.lease_item .lease_number.n {
+    margin-right: 20px;
+}
+.lease_item .lease_dates strong {
+    font-weight: 500;
+}
+.lease_item .fa-long-arrow-right,
+.journal_content .list_1 > .item .fa-long-arrow-right{
+    font-size: .8em;
+}
+.lease_item .days_count,
+.lease_item .lease_status_ {
+    display: inline-block;
+    color: #888;
+    font-size: 10px;
+}
+.lease_item .lease_info .days_count {
+    margin-left: 20px;
+}
+.lease_item .lease_tenants {
+    border-top: #c4c6d5 1px solid;
+    margin: 8px 0 0;
+}
+.lease_item .lease_tenant {
+    background: #f5f5fb;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px 15px 10px 5px;
+    margin: 10px 0 0;
+}
+.lease_item a.lease_tenant:hover {
+    background: #f8f8ff;
+}
+.lease_item .lease_number {
+    color: #888;
+}
+.lease_tenants .lease_number {
+    text-align: center;
+    width: 36px;
+}
+.lease_tenants .lease_tenant_name_bx,
+.lease_tenants .lease_tenant_client_type,
+.lease_tenants .lease_tenant_price {
+    margin-right: 15px;
+}
+.lease_tenants .sm {
+    display: inline-block;
+    color: #888;
+    font-size: 10px;
+}
+.lease_tenants .lease_tenant_client_type {
+    width: 40px;
+}
+.lease_tenants .w_auto {
+    width: auto;
+}
+.lease_tenants .lease_dates .sm {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+.mt20 {
+    margin-top: 20px;
+}
+.mt40 {
+    margin-top: 40px;
+}
+
+.more_link{
+    background: rgba(89, 93, 116, .1);
+    display: inline-block;
+    border-radius: 20px;
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 12px;
+}
+.more_link:hover{
+    background: rgba(89, 93, 116, .15);
+}
+.more_link i{
+    margin-left: 5px;
+}
+.more_link i.left_icon{
+    margin: 0 5px 0 0;
+}
+.more_link.wt{
+    background: #fff;
+}
+.more_link.wt:hover{
+    color: #000;
+}
+.more_link + .more_link{
+    margin-left: 5px;
+}
+
+.more_ch{
+    display: none;
+}
+.more_bx,
+.show_checked,
+.show_checked_inblock{
+    display: none;
+}
+.more_ch:checked ~ .more_bx,
+.more_ch:checked ~ .show_checked,
+.more_ch:checked ~ * .show_checked_inblock{
+    display: block;
+}
+.more_ch:checked ~ .show_checked.inline_block,
+.more_ch:checked ~ * .show_checked_inblock.inline_block{
+    display: inline-block;
+}
+.more_ch:checked ~ .show_checked.fx,
+.more_ch:checked ~ * .show_checked_inblock.fx{
+    display: flex;
+}
+.more_ch:checked ~ .hide_checked,
+.more_ch:checked ~ * .hide_checked_inblock{
+    display: none;
+}
+
+
+.tabs_filter .t_inp{
+    display: none;
+}
+.tabs_filter .tabs_filter_nav{
+    border-bottom: #ccc 1px solid;
+    margin: 0 0 20px;
+}
+.tabs_filter .tabs_filter_nav label{
+    border-bottom: transparent 3px solid;
+    font-size: 13px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 10px 10px;
+    margin-bottom: -2px
+}
+.tabs_filter .t_inp1:checked ~ .tabs_filter_nav label:nth-child(1),
+.tabs_filter .t_inp2:checked ~ .tabs_filter_nav label:nth-child(2),
+.tabs_filter .t_inp3:checked ~ .tabs_filter_nav label:nth-child(3),
+.tabs_filter .t_inp4:checked ~ .tabs_filter_nav label:nth-child(4),
+.tabs_filter .t_inp5:checked ~ .tabs_filter_nav label:nth-child(5),
+.tabs_filter .t_inp6:checked ~ .tabs_filter_nav label:nth-child(6),
+.tabs_filter .t_inp7:checked ~ .tabs_filter_nav label:nth-child(7) {
+    border-bottom-color: #4A4E66;
+}
+.tabs_filter .cont_t{
+    display: none;
+}
+.tabs_filter .t_inp1:checked ~ * .cont_t1,
+.tabs_filter .t_inp2:checked ~ * .cont_t2,
+.tabs_filter .t_inp3:checked ~ * .cont_t3,
+.tabs_filter .t_inp4:checked ~ * .cont_t4,
+.tabs_filter .t_inp5:checked ~ * .cont_t5,
+.tabs_filter .t_inp6:checked ~ * .cont_t6,
+.tabs_filter .t_inp7:checked ~ * .cont_t7{
+    display: block;
+}
+.tabs_filter .t_inp1:checked ~ * .cont_t1.fx,
+.tabs_filter .t_inp2:checked ~ * .cont_t2.fx,
+.tabs_filter .t_inp3:checked ~ * .cont_t3.fx,
+.tabs_filter .t_inp4:checked ~ * .cont_t4.fx,
+.tabs_filter .t_inp5:checked ~ * .cont_t5.fx,
+.tabs_filter .t_inp6:checked ~ * .cont_t6.fx,
+.tabs_filter .t_inp7:checked ~ * .cont_t7.fx {
+    display: flex;
+}
+.tabs_filter .tabs_filter_nav .count{
+    display: inline-block;
+    background: rgba(0,0,0,.1);
+    border-radius: 50px;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    min-width: 15px;
+    height: 15px;
+    padding: 0 4px;
+    margin-left: 3px;
+}
+.tabs_filter .tabs_filter_nav .count.b{
+    background: #3b527c;
+    color: #fff;
+    font-weight: 600;
+}
+
+[data-tooltip]::before{
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 1;
+    padding: 7px 10px;
+}
+
+
+
+
+/*---------------------*/
+/*--- view landlord ---*/
+/*---------------------*/
+.view_landlord .icon_block,
+.view_landlord .more_link.wt,
+.view_landlord .house_cont_block,
+.view_landlord .house_cont_block .table_r td.bl,
+.view_landlord .house_cont_block .table_r td.ll{
+    background: #f5f5f9;
+}
+.view_landlord .house_cont_block .occupancy_days_graph .item > .wrapper{
+    background: #e8e8ee;
+}
+.view_landlord .house_cont_block .table_r td,
+.view_landlord .house_cont_block .table_r tr.br td{
+    border-color: #f5f5f9;
+}
+.view_landlord .house_statistics .icons_block.md .occupancy_icon{
+    background: #fff;
+}
+

@@ -1,0 +1,889 @@
+
+.w1300{
+	width: 1300px;
+	max-width: calc(100% - 40px);
+	margin: 0 auto;
+}
+.w_max{
+	width: calc(100% - 40px);
+	margin: 0 auto;
+}
+
+.tab_nav_bx{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.tab_nav{
+	background: #e8e8ee linear-gradient(to top, #fff 16px, #e8e8ee 16px);
+	position: relative;
+	float: left;
+	width: 100%;
+	overflow-x: auto;
+	padding: 75px 0 16px;
+}
+.tab_nav_bx:before{
+	content: '';
+	background: linear-gradient(to left, #e8e8ee 10px, rgba(232,232,238,0));
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: calc(100% - 16px);
+	z-index: 3;
+}
+.tab_nav > .wrapper{
+}
+.tab_nav ul{
+	display: flex;
+	list-style: none;
+}
+.tab_nav li{
+	border-radius: 15px 15px 0 0;
+	white-space: nowrap;
+	position: relative;
+	padding: 10px 18px 10px;
+	margin: 0 5px;
+}
+.tab_nav li.selected{
+	background: #fff;
+	z-index: 4;
+}
+.tab_nav li a{
+	font-size: 14px;
+	font-family: 'futura_l';
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 2;
+}
+.tab_nav li .l{
+	background: #fff;
+	position: absolute;
+	left: -15px;
+	bottom: 0;
+	width: calc(100% + 30px);
+	height: 15px;
+}
+.tab_nav li .l:before{
+	content: '';
+	background: #4a4e66;
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: calc(100% - 120px);
+	height: 4px;
+	transform: translate(-50%, 50%);
+
+}
+.tab_nav li.selected:before,
+.tab_nav li.selected:after{
+	content: '';
+	background: #e8e8ee;
+	position: absolute;
+	bottom: 0;
+	width: 20px;
+	height: 15px;
+	z-index: 1;
+}
+.tab_nav li.selected:before{
+	border-radius: 0 0 25px 0;
+	right: 100%;
+}
+.tab_nav li.selected:after{
+	border-radius: 0 0 0 25px;
+	left: 100%;
+}
+
+.page_wrapper{
+	clear: both;
+	font: normal 15px/1.2 'futura_r', 'LatoLight', Tahoma, Arial, Helvetica, Geneva, sans-serif;
+	padding: 100px 0 60px;
+}
+.tab_nav_bx + .page_wrapper{
+	padding-top: 50px;
+}
+.page_wrapper .title_bx{
+	margin: 0 0 30px;
+}
+.page_wrapper .title_bx .title{
+	display: block;
+	font-size: 32px;
+	font-family: futura_r;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+.page_wrapper .tn_address{
+	font-family: 'futura_l';
+	padding: 0 0 0 2px;
+}
+.page_wrapper .tn_address i{
+	color: #4a4e66;
+}
+
+/*.tag_filter_block{
+	margin: 0 0 30px;
+}*/
+.tag_filter_block .item{
+	background: #efeff3;
+	display: inline-block;
+	border-radius: 13px;
+	font-size: 16px;
+	text-decoration: none;
+	position: relative;
+	padding: 12px 15px;
+	margin: 0 10px 0 0;
+}
+.tag_filter_block .item:hover{
+	background: #e0e0ea;
+}
+.tag_filter_block .item.selected{
+	background: #4a4e66;
+	color: #fff;
+}
+.tag_filter_block .item > span{
+	display: inline-block;
+}
+.tag_filter_block .item > i + span,
+.tag_filter_block .item > span + i{
+	margin-left: 5px;
+}
+.tag_filter_block .item .count{
+	background: #292b39;
+	border: #fff 2px solid;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1;
+	text-align: center;
+	position: absolute;
+	right: -10px;
+	top: 0;
+	min-width: 20px;
+	height: 20px;
+	transform: translateY(-50%);
+	padding: 2px 5px; 
+}
+
+
+.units_tenants_block{
+}
+.units_tenants_header{
+	background: #fff;
+	/*border-bottom: #e0e1e8 1px solid;*/
+	color: #6f777f;
+	font: 13px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: 300;
+	position: sticky;
+	top: 56px;
+	z-index: 4;
+	margin: 0 0 -15px 170px;
+}
+.units_tenants_header .th{
+	padding: 10px 15px;
+}
+.units_tenants_header .room_th{
+	width: 130px;
+}
+.units_tenants_header .unit_room_th{
+	width: 260px;
+}
+.units_tenants_header .tenant_th{
+	width: 210px;
+	margin-right: 35px;
+}
+.units_tenants_header .period_th{
+	width: 200px;
+	padding-left: 0;
+	margin-right: 20px;
+}
+.units_tenants_header .price_th{
+	text-align: center;
+	width: 90px;
+	margin-right: 20px;
+}
+.units_tenants_header .total_th{
+	width: 110px;
+	padding-left: 58px;
+}
+.units_tenants_header .contract_th{
+	padding-right: 22px;
+}
+
+.unit_tenants{
+	font-size: 15px;
+	line-height: 1.2;
+	margin: 0 0 30px;
+}
+.unit_tenants .unit_bx{
+	border-right: #e0e1e8 1px solid; 
+	width: 140px;
+	padding: 20px 0;
+}
+.unit_tenants .room_tenants_bx{
+	width: calc(100% - 140px);
+	padding: 20px 0 20px 30px;
+}
+.unit_tenants .tenants_bx{
+	width: calc(100% - 130px);
+}
+.unit_tenants .tenants_2_bx{
+	width: calc(100% - 260px);
+}
+
+.unit_tenants .unit_bx .title{
+	background: #efeff3;
+	border-radius: 10px 0 0 10px;
+	position: sticky;
+	top: 130px;
+	padding: 10px 15px;
+}
+.unit_tenants .unit_bx .title.m{
+	font-size: 14px;
+	line-height: 18px;
+}
+.unit_tenants .room_bx{
+	border-right: #e0e1e8 1px solid;
+	width: 130px;
+}
+.unit_tenants .room_bx .title{
+	background: #efeff3;
+	border-radius: 10px 0 0 10px;
+	position: sticky;
+	top: 130px;
+	padding: 10px 15px;
+}
+.unit_tenants .tenants_bx .room_bx .title{
+	border-radius: 0;
+}
+.unit_tenants .room_bx.empty{
+	border-right-color: #e9e9ee;
+}
+.unit_tenants .room_bx.empty .title{
+	background: #f6f6f8;
+	color: #999;
+}
+.unit_tenants .room_tenants{
+	margin: 0 0 10px;
+}
+.unit_tenants .room_tenants:last-child{
+	margin-bottom: 0;
+}
+.unit_tenants .apartment_bookings_wrapper ~ .room_tenants{
+	margin-top: 10px;
+}
+.isset_apartment_bookings .room_tenants.empty{
+	display: none;
+}
+.apartment_bookings_wrapper + .apartment_bookings_wrapper{
+	margin-top: 10px;
+}
+.unit_tenants .tenants_bx{
+}
+.unit_tenants .no_tenants{
+	background: #f6f6f8;
+	border-radius: 0 10px 10px 0;
+	font-family: 'futura_l';
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	padding: 10px 23px;
+}
+.unit_tenants .tenant{
+	background: #efeff3;
+	border-radius: 0 10px 10px 0;
+	margin: 0 0 10px;
+}
+.unit_tenants .tenant:last-child{
+	margin-bottom: 0;
+}
+
+.unit_tenants .tenant + .tenant .booking_period:before,
+.apartment_bookings_wrapper + .apartment_bookings_wrapper .booking_period:before{
+	content: '\f175';
+	color: #6c7295;
+	font-family: 'FontAwesome';
+	position: absolute;
+	left: 53px;
+	bottom: calc(100% + 7px);
+}
+.unit_tenants .tenant > .left_info{
+	padding: 10px 15px;
+}
+.unit_tenants .tenant > .right_info{
+	padding: 5px 15px;
+}
+.unit_tenants .tenant .n{
+	font-size: 11px;
+	color: #999;
+	text-align: center;
+	width: 20px;
+	margin: 0 10px 0 0;
+}
+.unit_tenants .tenant_name{
+	font-family: 'futura_l';
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 210px;
+	margin: 0 20px 0 0;
+}
+.unit_tenants .tenant_name .icon{
+	display: inline-block;
+	color: #7f95bb;
+	text-align: center;
+	width: 17px;
+	margin: 0 5px 0 0;
+}
+.unit_tenants .tenant_name .icon.green{
+	color: #7fbb8e;
+}
+.unit_tenants .tenant_name .icon.red{
+	color: #bb7f82;
+}
+.unit_tenants .tenant .s{
+	font-family: 'futura_l';
+}
+.unit_tenants .tenant .booking_period{
+	position: relative;
+	width: 200px;
+	margin-right: 20px;
+}
+.unit_tenants .tenant .booking_period i{
+	color: #555;
+	font-size: 11px;
+}
+.unit_tenants .tenant .booking_period .b_info{
+	display: none;
+	background: #efeff3;
+	position: absolute;
+	left: 0;
+	top: -10px;
+	width: 100%;
+	height: calc(100% + 20px);
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.unit_tenants .tenant .booking_period:hover .b_info{
+	display: flex;
+}
+.unit_tenants .tenant .booking_period .days_count{
+	font-size: 15px;
+}
+.unit_tenants .tenant .b_line{
+	background: #bdbec9;
+	border-radius: 2px;
+	position: relative;
+	width: 120px;
+	height: 4px;
+}
+.unit_tenants .tenant .b_line .b_active{
+	background: #4a4e66;
+	border-radius: 2px;
+	position: absolute;
+	height: 100%;
+}
+.unit_tenants .tenant .price{
+	text-align: center;
+	width: 90px;
+	margin-right: 20px;
+}
+.unit_tenants .tenant .download_doc{
+	border-radius: 7px;
+	position: relative;
+	transition: unset;
+}
+.unit_tenants .tenant .download_doc .icon{
+	background: url(../../images/icons/download_doc.svg) no-repeat center/65%;
+	width: 28px;
+	height: 28px;
+	margin: 0;
+}
+.unit_tenants .tenant .download_doc:after{
+	content: 'Download';
+	display: none;
+	background: #d7d7da;
+	border-radius: 7px 0 0 7px;
+	font-size: 12px;
+	font-family: Helvetica, Geneva, sans-serif;
+	color: #333;
+	font-weight: 100;
+	line-height: 18px;
+	white-space: nowrap;
+	position: absolute;
+	right: calc(100% - 5px);
+	right: 25px;
+	top: 0;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 6px 5px 4px 10px;
+}
+.unit_tenants .tenant .download_doc:hover{
+	background-color: rgba(0,0,0,.1);
+}
+.unit_tenants .tenant .download_doc:hover:after{
+	display: block;
+}
+.unit_tenants .tenant .download_doc span{
+	display: block;
+	font-family: 'futura_l';
+	font-size: 14px;
+	line-height: 18px;
+	padding: 5px 5px 5px 5px;
+}
+
+.unit_tenants .tenant .right_info .cont{
+	font-family: 'futura_l';
+	font-size: 14px;
+	line-height: 18px;
+	padding: 5px;
+}
+
+.unit_rooms_bx{
+	background: #efeff3;
+	border-radius: 10px 0 0 10px;
+	font-size: 14px;
+	line-height: 18px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 260px;
+	padding: 10px 15px;
+}
+.unit_rooms_bx > *{
+	display: inline-block;
+}
+.unit_rooms_bx .nm{
+	border-left: #bdbfca 1px solid;
+	position: relative;
+	padding: 0 10px;
+}
+.unit_rooms_bx .nm:first-child{
+	border-left: none;
+	padding-left: 0;
+}
+.unit_rooms_bx .badge{
+	background: #a1b0ca;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1;
+	padding: 2px 7px; 
+}
+
+
+.apartment_bookings_wrapper .left_w{
+	width: 260px;
+}
+.apartment_bookings_wrapper .right_w{
+	width: calc(100% - 260px);
+}
+.apartment_bookings_wrapper .apartment_booking{
+	background: #f8f8fa;
+	border-radius: 0 10px 10px 0;
+	min-height: 100%;
+	margin: 0 0 10px
+}
+.apartment_bookings_wrapper .apartment_booking:last-child{
+	margin-bottom: 0;
+}
+.apartment_bookings_wrapper .tenants_w{
+	background: #efeff3;
+	width: 210px;
+}
+.apartment_bookings_wrapper .tenants_w .wrapper{
+	position: sticky;
+	top: 130px;
+}
+.apartment_bookings_wrapper .tenants_w .tenant_name{
+	padding: 10px 15px;
+	margin: 0 0 10px;
+}
+.apartment_bookings_wrapper .tenants_w .tenant_name:last-child{
+	margin-bottom: 0;
+}
+.apartment_bookings_wrapper .apartment_booking_info{
+	width: calc(100% - 210px);
+}
+.apartment_bookings_wrapper .apartment_booking_info .tenant{
+	position: sticky;
+	top: 130px;
+	padding-left: 20px;
+}
+
+.download_zip_button{
+	background: none;
+	border: #e5e6ee 1px solid;
+	border-radius: 10px;
+	outline: none;
+	color: #555;
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	align-items: center;
+	cursor: pointer;
+	padding: 6px 10px 6px 12px;
+}
+.download_zip_button:hover{
+	background: #f6f6f8;
+	border-color: #f6f6f8; 
+}
+.download_zip_button .icon{
+	background: url(../../images/icons/download_docs.svg) no-repeat center/contain;
+	width: 20px;
+	height: 20px;
+	margin-left: 7px;
+}
+
+.graph_bx .graph{
+	position: relative;
+}
+.graph_bx .graph .val{
+	background: #4a4e66;
+	color: #fff;
+	width: 58px;
+	text-align: center;
+	height: 58px;
+	border-radius: 50%;
+	line-height: 56px;
+
+	font-size: 20px;
+	font-weight: 500;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.graph_bx .graph svg{
+	width: 100%;
+	height: 100%;
+}
+.graph_bx .graph svg .donut-ring{
+	stroke: #efeff3;
+}
+.graph_bx .graph svg .donut-segment{
+	stroke: #4a4e66;
+	stroke-linecap: round;
+}
+.graph_bx .name{
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+
+.occupancy_graph{
+	border-radius: 20px;
+	width: 140px;
+	padding: 7px 10px;
+	margin: 0 30px 0 0;
+}
+.occupancy_graph .graph{
+	height: 90px;
+}
+
+.occupancy2_graph{
+	background: rgba(0,0,0,.08);
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	box-sizing: border-box;
+	padding: 2px;
+}
+.occupancy2_graph .graph svg .donut-ring{
+	stroke: #f4f2f2;
+}
+.occupancy2_graph .graph svg .donut-segment{
+	stroke-linecap: butt;
+}
+
+.grids_info > .item{
+	background: #f3f1ef;
+	align-items: center;
+	padding: 7px 20px 7px 12px;
+	margin: 0 2px 0 0;
+}
+.grids_info > .item:first-child{
+	border-radius: 13px 0 0 13px;
+}
+.grids_info > .item:last-child{
+	border-radius: 0 13px 13px 0;
+	margin-right: 0;
+}
+.grids_info .icon{
+	margin-right: 12px;
+	height: 30px;
+}
+.grids_info .value{
+	font-size: 17px;
+	font-family: 'futura_r';
+	line-height: 1;
+}
+.grids_info .name{
+	color: #666;
+	font-size: 13px;
+	font-family: 'futura_l';
+	font-weight: 900;
+	line-height: 1;
+}
+.grids_info .icon .fa{
+	background: rgba(0,0,0,.08);
+	border-radius: 50%;
+	color: #4a4e66;
+	font-size: 15px;
+	text-align: center;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+}
+
+.tag_filter_block + .grids_info{
+	margin: 0 0 0 40px;
+}
+
+
+
+.tenants_cont1{
+	margin: 0 0 30px;
+}
+
+.table_r table{
+	width: 100%;
+}
+.table_r td{
+	background: #efeff3;
+	border: #fff 2px solid;
+	font-family: Arial;
+	font-size: 12px;
+	vertical-align: middle;
+	text-align: center;
+	height: 32px;
+	padding: 3px 5px;
+}
+.table_r .tr_h td,
+.table_r .tr_total td{
+	background: #dbdbe6;
+	font-weight: 800;
+	vertical-align: middle;
+}
+.table_r .tr_total td{
+	border: none;
+}
+.table_r .strong{
+	font-weight: 800;
+}
+
+.table_r .tr_total td:nth-child(1),
+.table_r .tr_total td:nth-child(6),
+.table_r .tr_total td:nth-child(14){
+	border-left: #fff 2px solid;
+}
+.table_r .tr_total td:last-child,
+.table_r .tr_total td:nth-child(4),
+.table_r .tr_total td:nth-child(12){
+	border-right: #fff 2px solid;
+}
+.table_r td.ll{
+	background: #fff;
+	border: none;
+	width: 7px;
+	padding: 0;
+}
+
+.table_r .tr_h.st{
+	position: sticky;
+	top: 55px;
+}
+.table_r .tr_h.st td{
+	/*background: #dbdbe6 linear-gradient(to top, #fff 2px, #dbdbe6 2px);*/
+	border: none; 
+	position: relative;
+}
+.table_r .tr_h.st td:before,
+.table_r .tr_h.st td:after{
+	content: '';
+	background: #fff;
+	position: absolute;
+	top: 0;
+	width: 1px;
+	height: 100%;
+}
+.table_r .tr_h.st td:before{
+	left: 0;
+}
+.table_r .tr_h.st td:after{
+	right: 0;
+}
+
+.table_r td.bl{
+	background: #fff;
+	height: 8px;
+}
+
+.table_r .td_price{
+	white-space: nowrap;
+}
+.print_body .table_r .td_price .badge{
+	white-space: pre-wrap;
+}
+/*.table_r .tenants_name_td{
+	text-align: left;
+}*/
+.table_r .tenants_name{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 110px;
+	margin: 0 auto;
+}
+.table_r .tr_gtotal td{
+	background: #4a4e66;
+	border: none;
+	color: #fff;
+	font-weight: 800;
+	padding: 8px 5px;
+}
+.table_r .tr_gtotal td:first-child{
+	border-left: #fff 2px solid;
+}
+.table_r .tr_gtotal td:last-child{
+	border-right: #fff 2px solid;
+}
+
+.table_r .badge{
+	display: inline-block;
+	background: #9da4b1;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 11px;
+	line-height: 1;
+	padding: 3px 6px;
+}
+.table_r .badge a{
+	color: #fff;
+}
+.table_r .badge.red{
+	background: #a64646;
+}
+.table_r .badge.orange{
+	background: #c6754d;
+}
+.table_r .dot_info{
+	display: inline-block;
+	background: #699d78;
+	border-radius: 20px;
+	position: relative;
+	top: 1px;
+	width: 10px;
+	height: 10px;
+	margin-left: 2px;
+}
+
+
+
+.rentroll_cont_bx2{
+	margin: 40px 0 0;
+}
+.rentroll_cont_bx2 .title2{
+	font-size: 26px;
+	font-family: futura_r;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+.table_r.ts1 table{
+	width: auto;
+	min-width: 300px;
+}
+.table_r.ts1 table td{
+	background: #f3f1ef;
+	text-align: left;
+	padding: 3px 10px;
+}
+.table_r.ts1 table td.val{
+	text-align: center;
+	font-weight: 800;
+}
+
+.tooltip-left:before,
+.tooltip-left:after{
+	transition: none;
+}
+.tooltip-left:hover:before{
+	left: auto;
+	right: -25px;
+	transform: translate(0, -10px);
+}
+.toggle_empty_rows_bx{
+	padding: 13px 0 0 40px;
+}
+.page_wrapper .toggle_link{
+	border-bottom: #666 1px dashed;
+	text-decoration: none;
+}
+.page_wrapper .toggle_link:hover{
+	border-bottom-style: solid;
+}
+
+@media (max-width: 1300px){
+	.unit_tenants{
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.unit_tenants .unit_bx{
+		width: 130px;
+	}
+	.unit_tenants .unit_bx .title{
+		padding-right: 10px;
+	}
+	.unit_tenants .unit_bx .title.m{
+		padding-left: 10px;
+	}
+	.unit_tenants .room_tenants_bx{
+		width: calc(100% - 130px);
+		padding-left: 15px;
+	}
+	.unit_tenants .tenants_bx{
+		width: calc(100% - 120px);
+	}
+	.unit_tenants .room_bx,
+	.unit_tenants .room_bx .title,
+	.units_tenants_header .room_th{
+		width: 120px;
+	}
+	.unit_tenants .tenant_name,
+	.units_tenants_header .tenant_th{
+		width: 190px;
+	}
+	.unit_tenants .tenant .booking_period,
+	.units_tenants_header .period_th{
+		width: 180px;
+	}
+	.apartment_bookings_wrapper .right_w {
+	    width: calc(100% - 170px);
+	}
+	.apartment_bookings_wrapper .apartment_booking_info .tenant{
+		padding-left: 5px;
+	}
+	.units_tenants_header{
+		font-size: 12px;
+		margin-left: 140px;
+	}
+}
+@media (max-width: 1200px){
+	.unit_tenants{
+		flex-wrap: wrap;
+	}
+	.unit_tenants .unit_bx{
+		border-right: none;
+		width: 100%;
+	}
+	.unit_tenants .room_tenants_bx{
+		width: 100%;
+		padding-left: 0;
+	}
+}

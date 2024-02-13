@@ -1,0 +1,88 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+}
+
+
+
+
+.table_r a{
+	text-decoration: none;
+	color: #000;
+}
+
+
+
+.print_body{
+	font-family: Arial;
+	padding: 20px;
+}
+
+.print_body h1{
+	font-size: 26px;
+	line-height: 1;
+	padding: 0;
+	margin: 0 0 15px;
+}
+.print_body h2{
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 1;
+	padding: 0;
+	margin: 0 0 10px;
+}
+.print_body table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 20px 0;
+}
+
+.print_body .table_r td{
+	border: #000 1px solid;
+	font-size: 12px;
+	text-align: center;
+	padding: 5px;
+}
+.print_body .table_r .td_price{
+	white-space: nowrap;
+}
+.print_body .table_r .td_price .badge{
+	white-space: pre-wrap;
+}
+.print_body .table_r .tr_h td,
+.print_body .table_r .tr_total td,
+.print_body .table_r .tr_gtotal td{
+	background: #dbdbe6;
+	font-weight: 800;
+}
+
+
+
+
+.print_body .rentroll_cont_bx2{
+	margin: 40px 0 0;
+}
+.print_body .rentroll_cont_bx2 .title2{
+	font-size: 26px;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+.print_body .table_r.ts1 table{
+	background: #f3f1ef;
+	width: auto;
+	min-width: 300px;
+}
+.print_body .table_r.ts1 table td{
+	text-align: left;
+	padding: 6px 10px;
+}
+.print_body .table_r.ts1 table td.val{
+	text-align: center;
+	font-weight: 800;
+}
+
+
