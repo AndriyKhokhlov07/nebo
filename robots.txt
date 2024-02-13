@@ -1,0 +1,24 @@
+User-agent: *
+
+Disallow: /backend/
+Disallow: /order/
+Disallow: /user/
+Disallow: /captcha/
+Disallow: /Smarty/
+Disallow: /api/
+Disallow: /compiled/
+Disallow: /cart/
+Disallow: /resize/
+Disallow: /password.php
+Disallow: /current-members
+Disallow: /technical-issues
+
+
+Disallow: /feedback-form-thank-you
+Disallow: /email-form-thank-you
+Disallow: /corporate-request-thank-you
+
+
+
+Host: https://ne-bo.com
+Sitemap: https://ne-bo.com/sitemap.xml
