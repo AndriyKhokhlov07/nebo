@@ -1,0 +1,6 @@
+AddType application/octet-stream csv
+AuthName "Backend CMS"
+AuthType Basic
+# AuthUserFile /home2/outpostclub/public_html/backend/.passwd
+AuthUserFile C:/OpenServer/domains/nebo/backend/.passwd
+require valid-user

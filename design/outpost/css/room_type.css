@@ -1,0 +1,53 @@
+
+
+
+.h5_1{
+	font-family: futura_l;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 18px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	color: red
+	margin-bottom: 30px;
+}
+
+.h5{
+	font-family: futura_l;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 18px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: left;
+	color: red
+}
+
+
+
+.title{
+	font-family: futura_r;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.info{
+	display: block;
+	margin-top: 15px
+}
+
+p {
+	font-size: 20px
+}
+
+li {
+	margin-left: 30px
+	
+}
+
+

@@ -1,0 +1,667 @@
+.--error{
+    color: red;
+}
+#renters-plans{
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin: 0 auto 100px;
+}
+.sure_form{
+    max-width: 100%;
+    border: #ccc solid 1px;
+    border-radius: 6px;
+    padding: 30px 25px 25px 25px;
+}
+h1.h1_style,
+h1.p_style{
+    font-family: futura_b, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+h1.p_style{
+    margin: 0;
+}
+h2.sf_title,
+h2.p_title{
+    color: #1c1c1c;
+    font-family: futura_b, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 34px;
+    margin: 50px 0 25px 0;
+}
+h2.p_title{
+    margin: 0 0 5px 0;
+}
+h3.h3_style{
+    color: #1c1c1c;
+    font-family: futura_b, serif;
+    font-size: 22px;
+    margin: 10px 0 10px 0;
+}
+h2.payment{
+    color: #C0321E;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.form-section a{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #c01e32;
+    border-bottom: #ccc 1px solid;
+}
+
+.hr-line{
+    display: block;
+    border: none;
+    border-top: #ccc 1px solid;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.form-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-block-radio {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 20px 0;
+}
+.form-block-button {
+    padding-top: 20px;
+}
+.sf {
+    display: flex;
+    width: 100%;
+}
+#renters-plans .sf:last-child {
+    padding-bottom: 20px;
+}
+.input_block {
+    width: 50%;
+    padding-right: 10px;
+    margin: 10px 0 10px 0;
+}
+.input_block_radio {
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+.button_block {
+    display: flex;
+    margin: 20px 0 10px 0;
+}
+.input_block_l,
+.select_block_r{
+    width: 50%;
+    margin: 10px 10px 10px 0;
+}
+.input_block_r,
+.select_block {
+    width: 50%;
+    margin: 10px 0 10px 10px;
+}
+span {
+    font-size: 18px;
+}
+input {
+    display: block;
+    border: #000000 2px solid;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: futura_l, serif;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 5px;
+}
+.form-block.agreement a{
+    font-size: 15px;
+    border: none;
+    padding-bottom: 0;
+    margin: 0;
+}
+.hide .nh_content{
+    display: block;
+    margin: 10px;
+}
+.hide.need_help{
+    width: 40%;
+}
+
+/* SELECT */
+.sure_select {
+    display: block;
+    border: #000000 2px solid;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: futura_l, serif;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    padding: 10px 15px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.sure_select:not(.empty):before {
+    content: '';
+    background: linear-gradient(to right, rgba(255,255,255,0), #fff 40%);
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+}
+.sure_select select {
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    font-size: 18px;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, serif;
+    line-height: 1;
+    width: 100%;
+    height: 24px;
+    padding-left: 5px;
+}
+.sure_select:not(.empty):after {
+    content: '';
+    border-right: #888 2px solid;
+    border-bottom: #888 2px solid;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 4px;
+    height: 4px;
+}
+/* SELECT END */
+
+/* RADIO-BUTTON */
+.radio_sf {
+    left: 7px;
+    top: 16px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+    border: #000000 2px solid;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: futura_l, serif;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 5px;
+}
+.radio_sure {
+    display: inline-block;
+    font-family: 'futura_r', serif;
+    margin-right: 12px;
+}
+input[type=radio]:checked + span {
+    background: #333;
+    color: #fff;
+}
+.radio_sure span {
+    background: #f0f0f0;
+    border: #333 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px 15px;
+    margin: 0 5px 5px 0;
+}
+/* RADIO-BUTTON END */
+/* BUTTON BACK / NEXT */
+.button-back,
+.button-next {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: futura_l, serif;
+    width: auto;
+    padding: 10px 50px;
+}
+.button-back{
+    margin-right: 20px;
+}
+.button-back:enabled{
+    color: white;
+    cursor: pointer;
+    background-color: #cbcbcb;
+}
+.button-next:enabled {
+    color: white;
+    cursor: pointer;
+    background-color: #00aa00;
+}
+.button-back:enabled:hover {
+    background-color: #a09f9f;
+}
+.button-next:enabled:hover {
+    background-color: #019801;
+}
+/* BUTTON BACK / NEXT END */
+
+.sure_logo{
+    padding-top: 50px;
+}
+.sure_logo img{
+    width: 200px;
+    margin: 35px 0 15px 0;
+}
+/**** MULTI-STEPS ****/
+/*.step-progressbar{*/
+/*    display: block;*/
+/*}*/
+.steps{
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 0 0;
+    position: relative;
+    z-index: 10;
+}
+.steps li {
+    padding: 0 20px;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+.steps li + .steps li:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 19px;
+    background: #a09f9f;
+    width: 100%;
+    height: 2px;
+    transform: translateX(-50%);
+    z-index: -10;
+}
+.steps li.not-active .progress-count:after{
+    background: #fff;
+    border: 2px solid #4A4E66;
+}
+.steps li.is-active .progress-count:after{
+    background: #fff;
+
+}
+.steps li.not-active .progress-count,
+.steps li.is-active .progress-count{
+    color: #4A4E66;
+}
+.steps li.is-active {
+    color: #4A4E66;
+}
+.steps li.not-active {
+    color: #a09f9f;
+}
+.steps li:last-child::before,
+.steps li:last-child::after{
+   display: none;
+}
+.steps li:before, .steps li:after {
+    position: absolute;
+    content: "";
+    top: 19px;
+    left: 50%;
+    height: 2px;
+    width: 100%;
+    background: #4A4E66;
+}
+.progress-count{
+    height: 40px;
+    width:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 600;
+    position: relative;
+    z-index:10;
+    color: #ffffff;
+}
+
+.progress-count:after{
+    content: "";
+    height: 40px;
+    width: 40px;
+    background: #009006;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid #009006;
+    z-index: -10;
+    outline: #fff 10px solid;
+}
+
+.step_p{
+    font-family: futura_r, serif;
+    padding-top: 10px;
+}
+.not-active .progress-count:before,
+.not-active ~ .step-item .progress-count:before{
+    display: none;
+}
+/**** MULTI-STEPS END ****/
+
+
+/**** RENTERS PAYMENT ****/
+#renters-quote,
+#renters-purchase{
+    width: calc(100% - 40px);
+    max-width: 700px;
+    margin: 100px auto 100px;
+}
+#renters-purchase .input_block,
+#renters-quote .input_block{
+    width: 100%;
+    padding: 0;
+    margin: 10px 0 10px 0;
+}
+.input_block_card{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 4;
+    background: #fff;
+    border: #333 2px solid;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px 0 20px;
+    padding: 10px 15px;
+}
+.input_block_card div{
+    display: flex;
+}
+.input_block_card input{
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-size: 18px;
+    font-family: futura_l, serif;
+    width: 100%;
+}
+.input_block_card input[name=card_cvc] {
+    width: 30px;
+}
+.input_block_card input[name=expiration] {
+    width: 74px;
+}
+#renters-purchase .hr-line {
+    display: block;
+    border: none;
+    border-top: #ccc 1px solid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+p.select_note{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#renters-purchase .form-block.agreement{
+    display: flex;
+    flex-wrap: unset;
+}
+#renters-purchase div.agreement div {
+    margin-right: 20px;
+    max-width: 100%;
+}
+/**** RENTERS PAYMENT END ****/
+
+
+/**** RENTERS QUOTE ****/
+#renters-quote .form-block {
+    display: block;
+}
+#renters-quote .form-block.quote-title{
+    position: sticky;
+    background: #fff;
+    top: 0;
+    z-index: 12;
+    margin: 0 0 1px 0;
+}
+#renters-quote .annual{
+    text-align: center;
+    height: 170px;
+    padding: 15px 0;
+}
+#renters-quote .form-block.quote-title .annual a{
+    display: block;
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+}
+#renters-quote .form-block.quote-title .annual .p_title{
+    margin-top: 15px;
+}
+#renters-quote .eleven_pay{
+    text-align: center;
+    padding: 0 0 5px 0;
+}
+#renters-quote .form-block.quote-title .eleven_pay a{
+    margin-bottom: 5px;
+}
+#renters-quote .form-block.quote-title .eleven_pay .p_title,
+#renters-quote .form-block.quote-title .eleven_pay .h3_style,
+#renters-quote .form-block.quote-title .eleven_pay .payment{
+    margin: 0;
+}
+#renters-quote .sticky_line{
+    background: #ccc;
+    position: sticky;
+    width: calc(100% + 20px);
+    left: 0;
+    top: 170px;
+    height: 1px;
+    z-index: 10;
+    margin-left: -10px;
+}
+#renters-quote .sticky_unline{
+    background: #fff;
+    position: relative;
+    width: calc(100% + 20px);
+    left: -10px;
+    top: -2px;
+    height: 3px;
+    z-index: 11;
+}
+#renters-quote hr.hr-line {
+    display: block;
+    border: none;
+    border-top: #ccc 1px solid;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#renters-quote p.select_note{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#renters-quote .select_block{
+    width: 100%;
+    margin-left: 0;
+}
+#renters-quote .button_block {
+    display: flex;
+    margin: 20px 0 10px 0;
+}
+/**** RENTERS QUOTE END ****/
+
+/* SELECT */
+#renters-quote .select_block_payment{
+    margin-bottom: 30px;
+    width: 100%;
+}
+/* SELECT END */
+
+body.loaded{
+    overflow: hidden;
+}
+body.loaded:before{
+    content: '';
+    background: rgba(0,0,0,.6) url('../images/icons/load_c2.svg') no-repeat center/50px 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9000;
+}
+
+@media screen and (max-width: 850px) {
+    .steps li:before, .steps li:after {
+        top: 5px;
+    }
+    .progress-count {
+        height: 10px;
+        width: 10px;
+        font-size: 0;
+    }
+    .progress-count:after {
+        content: "";
+        height: 10px;
+        width: 10px;
+    }
+    .step_p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .radio_sure {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    #renters-plans .sf {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #renters-plans .form-block-radio {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    #renters-plans .input_block_l,
+    #renters-plans .input_block_r,
+    #renters-plans .input_block {
+        width: 100%;
+        margin: 10px 0 10px 0;
+        padding: 0;
+    }
+    #renters-plans .select_block {
+        width: 100%;
+        margin-left: 0;
+    }
+    .radio_sure {
+        margin-bottom: 30px;
+    }
+    #renters-plans .button_block {
+        justify-content: center;
+        display: flex;
+        margin: 20px 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .steps li {
+        padding: 0;
+    }
+    .progress-count:after{
+        outline: #fff 5px solid;
+    }
+    /*.form-block.quote-title{*/
+    /*    padding-bottom: 9px;*/
+    /*}*/
+    /*.eleven_pay{*/
+    /*     padding-bottom: 15px;*/
+    /*}*/
+    h2.p_title {
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+    }
+    h2.payment{
+        font-size: 18px;
+        margin: 0;
+    }
+    #renters-quote .annual{
+        height: 170px;
+        padding: 30px 0 0 0;
+    }
+    #renters-quote .form-block.quote-title .annual a {
+        width: 55%;
+    }
+    #renters-quote .eleven_pay {
+        padding: 9px 0 10px 0;
+    }
+    .sticky_line{
+        top: 130px;
+    }
+    h3.h3_style {
+        font-size: 18px;
+        margin: 0;
+    }
+    .sf{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sf div{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #renters-purchase .input_block_card{
+        border: none;
+        flex-direction: column;
+        padding: 0;
+    }
+    #renters-purchase .input_block_card input[name="card_number"],
+    #renters-purchase .input_block_card div{
+        border: #000000 2px solid;
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin: 10px 0;
+    }
+    #renters-purchase .input_block_card input[name="card_exp_year"]{
+        width: 85%;
+    }
+    #renters-purchase .input_block_card input[name="card_cvc"]{
+        width: 15%;
+    }
+    #renters-purchase .form-block.agreement{
+        display: flex;
+        flex-wrap: unset;
+        margin-bottom: 60px;
+    }
+    #renters-purchase .form-block.agreement a{
+        font-size: 15px;
+        border: none;
+        padding-bottom: 0;
+        margin: 0;
+    }
+}
+
